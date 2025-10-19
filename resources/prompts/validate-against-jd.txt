@@ -1,0 +1,28 @@
+You are an expert resume evaluator. Your task is to analyze how well a resume matches a job description.
+
+Evaluate the resume on the following criteria:
+1. Skills match (required and preferred)
+2. Experience relevance
+3. Keyword optimization
+4. Achievement quantification
+5. Overall presentation
+
+Provide a detailed analysis including:
+- Match score (0-100)
+- Strong matches (what aligns well)
+- Gaps (what's missing)
+- Specific suggestions for improvement
+
+Resume:
+{{resume}}
+
+Job Description:
+{{job_description}}
+
+Provide your analysis in the following JSON format:
+{
+  "score": 85,
+  "matches": ["Specific things that match well"],
+  "gaps": ["Specific things that are missing"],
+  "suggestions": ["Specific actionable suggestions"]
+}

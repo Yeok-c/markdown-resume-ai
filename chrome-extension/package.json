@@ -1,0 +1,15 @@
+{
+  "name": "resume-ai-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for extracting job descriptions for Resume AI",
+  "scripts": {
+    "build": "tsc && npm run copy",
+    "copy": "cp manifest.json dist/ && cp popup.html dist/ && cp options.html dist/",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.268",
+    "typescript": "^5.4.5"
+  }
+}

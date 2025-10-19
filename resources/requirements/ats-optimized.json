@@ -1,0 +1,62 @@
+{
+  "name": "ats-optimized",
+  "description": "ATS (Applicant Tracking System) optimized formatting requirements",
+  "rules": [
+    {
+      "id": "no-tables",
+      "description": "Avoid tables (ATS may not parse them correctly)",
+      "severity": "error",
+      "check": "table-elements",
+      "autofix": false
+    },
+    {
+      "id": "no-images",
+      "description": "Avoid images and graphics (not ATS-friendly)",
+      "severity": "error",
+      "check": "image-elements",
+      "autofix": false
+    },
+    {
+      "id": "simple-formatting",
+      "description": "Use simple, standard formatting (avoid complex layouts)",
+      "severity": "warning",
+      "check": "layout-complexity",
+      "autofix": false
+    },
+    {
+      "id": "keyword-optimization",
+      "description": "Include relevant keywords from job description",
+      "severity": "warning",
+      "check": "keyword-density",
+      "autofix": false
+    },
+    {
+      "id": "standard-section-names",
+      "description": "Use standard section names (Experience, Education, Skills)",
+      "severity": "warning",
+      "check": "section-naming",
+      "autofix": true
+    },
+    {
+      "id": "no-headers-footers",
+      "description": "Avoid headers and footers (may be ignored by ATS)",
+      "severity": "warning",
+      "check": "header-footer",
+      "autofix": false
+    },
+    {
+      "id": "standard-fonts",
+      "description": "Use standard, readable fonts",
+      "severity": "info",
+      "check": "font-family",
+      "autofix": true
+    },
+    {
+      "id": "proper-file-format",
+      "description": "Use ATS-friendly file format (PDF or DOCX)",
+      "severity": "error",
+      "check": "file-format",
+      "autofix": false
+    }
+  ]
+}

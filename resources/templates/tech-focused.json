@@ -1,0 +1,27 @@
+{
+  "name": "tech-focused",
+  "description": "Technical resume optimized for software engineering roles",
+  "metadata": {
+    "industry": ["software", "technology"],
+    "level": ["mid", "senior", "lead"],
+    "type": "technical"
+  },
+  "markdown": "---\n---\n\n# {{name}}\n\n{{contact}}\n\n## Technical Summary\n\n{{summary}}\n\n## Technical Skills\n\n{{skills}}\n\n## Professional Experience\n\n{{experience}}\n\n## Projects\n\n{{projects}}\n\n## Education\n\n{{education}}\n\n## Certifications & Awards\n\n{{certifications}}",
+  "css": "",
+  "styles": {
+    "marginV": 55,
+    "marginH": 45,
+    "lineHeight": 1.3,
+    "paragraphSpace": 5,
+    "themeColor": "#000000",
+    "fontCJK": {
+      "name": "华康宋体",
+      "fontFamily": "HKST"
+    },
+    "fontEN": {
+      "name": "Verdana"
+    },
+    "fontSize": 12,
+    "paper": "A4"
+  }
+}

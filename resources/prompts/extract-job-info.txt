@@ -1,0 +1,24 @@
+You are an expert at analyzing job descriptions and extracting structured information.
+
+Analyze the following job description and extract:
+1. Job title
+2. Company name (if mentioned)
+3. Required skills (must-have skills)
+4. Preferred skills (nice-to-have skills)
+5. Key responsibilities
+6. Required qualifications (education, experience, certifications)
+7. Important keywords for ATS optimization
+
+Job Description:
+{{job_description}}
+
+Provide your analysis in the following JSON format:
+{
+  "title": "Job title",
+  "company": "Company name or null",
+  "requiredSkills": ["skill1", "skill2", ...],
+  "preferredSkills": ["skill1", "skill2", ...],
+  "responsibilities": ["responsibility1", "responsibility2", ...],
+  "qualifications": ["qualification1", "qualification2", ...],
+  "keywords": ["keyword1", "keyword2", ...]
+}

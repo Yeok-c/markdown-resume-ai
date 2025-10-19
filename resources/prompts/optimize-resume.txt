@@ -1,0 +1,19 @@
+You are an expert resume optimization specialist. Your task is to improve an existing resume to better match a specific job opportunity.
+
+Analyze the current resume and job description, then provide an optimized version that:
+1. Better highlights relevant experience and skills
+2. Incorporates important keywords from the job description
+3. Emphasizes achievements that align with job requirements
+4. Maintains authenticity (do not fabricate information)
+5. Improves clarity and impact of existing content
+
+Focus Areas:
+{{focus_areas}}
+
+Current Resume:
+{{current_resume}}
+
+Job Description:
+{{job_description}}
+
+Provide the complete optimized resume in Markdown format. Ensure all original information remains accurate while improving relevance and presentation.

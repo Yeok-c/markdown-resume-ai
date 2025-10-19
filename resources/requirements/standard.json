@@ -1,0 +1,90 @@
+{
+  "name": "standard",
+  "description": "Standard professional resume formatting requirements",
+  "rules": [
+    {
+      "id": "max-length",
+      "description": "Resume should be 1-2 pages maximum",
+      "severity": "warning",
+      "check": "page-count",
+      "autofix": false
+    },
+    {
+      "id": "required-sections",
+      "description": "Must include key sections (experience, education, skills)",
+      "severity": "error",
+      "check": "section-headers",
+      "autofix": false
+    },
+    {
+      "id": "bullet-points",
+      "description": "Use bullet points for experience items",
+      "severity": "warning",
+      "check": "list-items",
+      "autofix": false
+    },
+    {
+      "id": "action-verbs",
+      "description": "Start bullet points with strong action verbs",
+      "severity": "info",
+      "check": "verb-usage",
+      "autofix": false
+    },
+    {
+      "id": "quantifiable-achievements",
+      "description": "Include quantifiable achievements with numbers and metrics",
+      "severity": "info",
+      "check": "metrics",
+      "autofix": false
+    },
+    {
+      "id": "contact-info",
+      "description": "Include complete contact information (email required)",
+      "severity": "error",
+      "check": "contact-fields",
+      "autofix": false
+    },
+    {
+      "id": "date-format",
+      "description": "Use consistent date format throughout",
+      "severity": "info",
+      "check": "date-consistency",
+      "autofix": true
+    },
+    {
+      "id": "no-personal-pronouns",
+      "description": "Avoid using personal pronouns (I, me, my, we, us, our)",
+      "severity": "warning",
+      "check": "pronoun-usage",
+      "autofix": false
+    },
+    {
+      "id": "consistent-tense",
+      "description": "Use consistent verb tense (past for previous roles, present for current)",
+      "severity": "warning",
+      "check": "verb-tense",
+      "autofix": false
+    },
+    {
+      "id": "line-length",
+      "description": "Keep lines reasonably short for readability (under 120 characters)",
+      "severity": "info",
+      "check": "line-width",
+      "autofix": false
+    },
+    {
+      "id": "no-typos",
+      "description": "Check for spelling and grammar errors",
+      "severity": "error",
+      "check": "spelling",
+      "autofix": true
+    },
+    {
+      "id": "consistent-formatting",
+      "description": "Use consistent formatting for dates, companies, and titles",
+      "severity": "warning",
+      "check": "format-consistency",
+      "autofix": true
+    }
+  ]
+}

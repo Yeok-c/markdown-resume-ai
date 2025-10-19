@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Resume AI - Job Description Extractor",
+  "version": "1.0.0",
+  "description": "Extract job descriptions from web pages and send to Resume AI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Resume AI Extractor"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html"
+}
